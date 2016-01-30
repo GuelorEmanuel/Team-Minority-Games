@@ -9,7 +9,7 @@ public class MusicManager : MonoBehaviour {
 
 	void Awake(){
 		DontDestroyOnLoad (gameObject);
-		Debug.Log ("Don't destrou on load : " + name);
+		Debug.Log ("Don't destroy on load : " + name);
 	}
 
 	void Start(){
@@ -23,7 +23,7 @@ public class MusicManager : MonoBehaviour {
 	
 	}
 
-	void OnLevelWasLoaded( int level){
+	void OnLevelWasLoaded(int level){
 
 		AudioClip clip = levelMusicChangeArray[level];
 

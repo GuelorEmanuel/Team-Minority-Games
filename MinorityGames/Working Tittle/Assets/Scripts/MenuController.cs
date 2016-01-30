@@ -31,4 +31,8 @@ public class MenuController : MonoBehaviour {
 			
 		}
 	}
+	public void Potato(string chips, int qty)
+	{
+		
+	}
 }
