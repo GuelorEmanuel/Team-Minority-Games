@@ -14,6 +14,5 @@ public class CharacterManager : MonoBehaviour {
 		AudioClip clip = voices[index];
 		audioSource.clip = clip;
 		audioSource.Play ();
-		Debug.Log (index);
 	}
 }
