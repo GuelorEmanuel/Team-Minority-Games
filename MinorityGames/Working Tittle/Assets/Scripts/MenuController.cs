@@ -28,9 +28,6 @@ public class MenuController : MonoBehaviour {
             loadingImage.SetActive(true);
             StartCoroutine(LoadLevelWithBar(sceneName));
 			Debug.Log ("Load : " + sceneName);
-           
-			
 		}
 	}
-
 }
