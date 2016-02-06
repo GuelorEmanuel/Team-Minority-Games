@@ -19,7 +19,8 @@ public class MenuController : MonoBehaviour {
         }
     }
 
-	public void LoadScene(string sceneName){
+	public void LoadScene(string sceneName)
+	{
 		if (sceneName.Equals ("Exit")) {
 			Debug.Log ("Quit Called");
 			Application.Quit ();
@@ -31,8 +32,5 @@ public class MenuController : MonoBehaviour {
 			
 		}
 	}
-	public void Potato(string chips, int qty)
-	{
-		
-	}
+
 }
