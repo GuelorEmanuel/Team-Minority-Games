@@ -2,7 +2,7 @@
 ## Dev Team
 - Guelor Emanuel
 - Marcio Zhu
-- Josh Chartrand
+- Matt Mayer
 
 ## Game description
 A simple 2D beat 'em ups game for mobile devices
