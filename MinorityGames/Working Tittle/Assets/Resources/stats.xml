@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CharacterStats>
+  <Characters>
+    <Character name="Tofu">
+	    <Health>500</Health>
+	    <LighAttackMax>10</LighAttackMax>
+	    <LighAttackMin>15</LighAttackMin>
+	    <HeavyAttackMax>15</HeavyAttackMax>
+	    <HeavyAttackMin>20</HeavyAttackMin>
+	    <ShieldMax>10</ShieldMax>
+	    <ShieldMin>15</ShieldMin>
+	    <Critical>2.0</Critical>
+    </Character>
+    <Character name="Octopus">
+	    <Health>250</Health>
+	    <LighAttackMax>10</LighAttackMax>
+	    <LighAttackMin>15</LighAttackMin>
+	    <HeavyAttackMax>15</HeavyAttackMax>
+	    <HeavyAttackMin>20</HeavyAttackMin>
+	    <ShieldMax>10</ShieldMax>
+	    <ShieldMin>15</ShieldMin>
+	    <Critical>2.0</Critical>
+    </Character>
+    <Character name="Sushi">
+	    <Health>300</Health>
+	    <LighAttackMax>10</LighAttackMax>
+	    <LighAttackMin>15</LighAttackMin>
+	    <HeavyAttackMax>15</HeavyAttackMax>
+	    <HeavyAttackMin>20</HeavyAttackMin>
+	    <ShieldMax>10</ShieldMax>
+	    <ShieldMin>15</ShieldMin>
+	    <Critical>2.0</Critical>
+    </Character>
+    <Character name="Riceball">
+	    <Health>1000</Health>
+	    <LighAttackMax>10</LighAttackMax>
+	    <LighAttackMin>15</LighAttackMin>
+	    <HeavyAttackMax>15</HeavyAttackMax>
+	    <HeavyAttackMin>20</HeavyAttackMin>
+	    <ShieldMax>10</ShieldMax>
+	    <ShieldMin>15</ShieldMin>
+	    <Critical>2.0</Critical>
+    </Character>
+  </Characters>
+</CharacterStats>

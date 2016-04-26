@@ -8,11 +8,19 @@ public class CharacterManager : MonoBehaviour {
 	public Sprite[] char_collection;
 	public AudioClip[] voices;
 	public AudioSource audioSource = new AudioSource ();
+    private CharacterStatsContainer stats;
 
-	public void ChangeCharacterSelected(int index){
+    void Start()
+    {
+        stats = CharacterStatsContainer.Load();
+    }
+
+    public void ChangeCharacterSelected(int index){
 		selectedCharacter.sprite = char_collection [index];
 		AudioClip clip = voices[index];
 		audioSource.clip = clip;
 		audioSource.Play ();
+
+		Debug.Log(stats);
 	}
 }
