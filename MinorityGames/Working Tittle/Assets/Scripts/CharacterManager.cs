@@ -16,11 +16,11 @@ public class CharacterManager : MonoBehaviour {
     }
 
     public void ChangeCharacterSelected(int index){
-		selectedCharacter.sprite = char_collection [index];
+		selectedCharacter.sprite = char_collection[index];
 		AudioClip clip = voices[index];
 		audioSource.clip = clip;
 		audioSource.Play ();
 
-		Debug.Log(stats);
+		Debug.Log(stats.charStats[index].charName);
 	}
 }
