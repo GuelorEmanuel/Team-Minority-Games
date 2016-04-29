@@ -13,7 +13,7 @@ public class HealthBar : MonoBehaviour {
 	void Start () {
 		currentHealth = maxHealth;
 		if (currentHealth > 0) {
-			InvokeRepeating ("decreaseHealth", 1f, 1f);
+			//InvokeRepeating ("decreaseHealth", 1f, 1f);
 		}
 	
 	}
@@ -23,17 +23,21 @@ public class HealthBar : MonoBehaviour {
 	
 	}
 
-	void decreaseHealth() {
-		currentHealth -= 2f;
-		float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
-		setGreenHealthBar(calculatedHealth);
+	public void decreaseHealth() {
+		if (currentHealth > 0) {
+			
+			currentHealth -= 2f;
+			float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
+			setGreenHealthBar (calculatedHealth);
+			setRedHealthBar (currentHealth);
+		}
 	}
 
 	public void setGreenHealthBar(float health) {
 
 		//health vakue 0-1
 		greenHealthBar.transform.localScale = new Vector3 (Mathf.Clamp(health,0f,1f),
-			greenHealthBar.transform.localScale.y, greenHealthBar.transform.localScale.z);
+		greenHealthBar.transform.localScale.y, greenHealthBar.transform.localScale.z);
 	}
 
 	public void setRedHealthBar(float health) { //@TODO need more logic for the red health bar decrease
