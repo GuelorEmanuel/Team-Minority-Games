@@ -24,10 +24,13 @@ public class HealthBar : MonoBehaviour {
 	}
 
 	public void decreaseHealth() {
-		currentHealth -= 2f;
-		float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
-		setGreenHealthBar(calculatedHealth);
-		setRedHealthBar (currentHealth);
+		if (currentHealth > 0) {
+			
+			currentHealth -= 2f;
+			float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
+			setGreenHealthBar (calculatedHealth);
+			setRedHealthBar (currentHealth);
+		}
 	}
 
 	public void setGreenHealthBar(float health) {
