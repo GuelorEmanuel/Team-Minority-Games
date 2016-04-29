@@ -33,7 +33,7 @@ public class HealthBar : MonoBehaviour {
 
 		//health vakue 0-1
 		greenHealthBar.transform.localScale = new Vector3 (Mathf.Clamp(health,0f,1f),
-			greenHealthBar.transform.localScale.y, greenHealthBar.transform.localScale.z);
+		greenHealthBar.transform.localScale.y, greenHealthBar.transform.localScale.z);
 	}
 
 	public void setRedHealthBar(float health) { //@TODO need more logic for the red health bar decrease
