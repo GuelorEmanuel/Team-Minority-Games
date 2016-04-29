@@ -13,7 +13,7 @@ public class HealthBar : MonoBehaviour {
 	void Start () {
 		currentHealth = maxHealth;
 		if (currentHealth > 0) {
-			InvokeRepeating ("decreaseHealth", 1f, 1f);
+			//InvokeRepeating ("decreaseHealth", 1f, 1f);
 		}
 	
 	}
@@ -23,10 +23,11 @@ public class HealthBar : MonoBehaviour {
 	
 	}
 
-	void decreaseHealth() {
+	public void decreaseHealth() {
 		currentHealth -= 2f;
 		float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
 		setGreenHealthBar(calculatedHealth);
+		setRedHealthBar (currentHealth);
 	}
 
 	public void setGreenHealthBar(float health) {
