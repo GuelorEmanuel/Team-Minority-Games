@@ -6,29 +6,29 @@ using System.Xml.Serialization;
 public class CharacterStats {
 
 	[XmlAttribute("name")]
-	public string charName;
+    public string charName { get; set; }
 
 	[XmlElement("Health")]
-	public int health;
+	public int health { get; set; }
 
-	[XmlElement("LighAttackMax")]
-	public int lightAttackMax;
+    [XmlElement("LighAttackMax")]
+	public int lightAttackMax { get; set; }
 
-	[XmlElement("LighAttackMin")]
-	public int lightAttackMin;
+    [XmlElement("LighAttackMin")]
+	public int lightAttackMin { get; set; }
 
-	[XmlElement("HeavyAttackMax")]
-	public int heavyAttackMax;
+    [XmlElement("HeavyAttackMax")]
+	public int heavyAttackMax { get; set; }
 
-	[XmlElement("HeavyAttackMin")]
-	public int heavyAttackMin;
+    [XmlElement("HeavyAttackMin")]
+	public int heavyAttackMin { get; set; }
 
-	[XmlElement("ShieldMax")]
-	public int shieldMax;
+    [XmlElement("ShieldMax")]
+	public int shieldMax { get; set; }
 
-	[XmlElement("ShieldMin")]
-	public int shieldMin;
+    [XmlElement("ShieldMin")]
+	public int shieldMin { get; set; }
 
-	[XmlElement("Critical")]
-	public float critical;
+    [XmlElement("Critical")]
+	public float critical { get; set; }
 }

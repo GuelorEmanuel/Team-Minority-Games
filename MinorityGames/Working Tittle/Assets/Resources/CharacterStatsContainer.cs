@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using System.IO;
 
+
 [XmlRoot("CharacterStats")]
 public class CharacterStatsContainer {
 
@@ -10,7 +11,7 @@ public class CharacterStatsContainer {
 	[XmlArrayItem("Character")]
 	public List<CharacterStats> charStats = new List<CharacterStats>();
 
-	public static CharacterStatsContainer Load() {
+	public static CharacterStatsContainer LoadAll() {
 		TextAsset _xml = Resources.Load("stats") as TextAsset;
 
 		XmlSerializer serializer = new XmlSerializer(typeof(CharacterStatsContainer));

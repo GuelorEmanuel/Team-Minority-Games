@@ -8,19 +8,46 @@ public class CharacterManager : MonoBehaviour {
 	public Sprite[] char_collection;
 	public AudioClip[] voices;
 	public AudioSource audioSource = new AudioSource ();
+    public int characterIndex;
     private CharacterStatsContainer stats;
+    
 
-    void Start()
-    {
-        stats = CharacterStatsContainer.Load();
+    void Start(){
+        stats = CharacterStatsContainer.LoadAll();
     }
 
-    public void ChangeCharacterSelected(int index){
-		selectedCharacter.sprite = char_collection[index];
-		AudioClip clip = voices[index];
-		audioSource.clip = clip;
-		audioSource.Play ();
+    public int GetCharacterIndex(){
+        return this.characterIndex;
+    }
 
-		Debug.Log(stats.charStats[index].charName);
+    public void SetCharacterIndex(int value) {
+        this.characterIndex = value;
+        ChangeCharacterSelected();
+    }
+
+    public void ChangeCharacterSelected(){
+        ChangeCharaterSprite();
+        ChangeCharaterSound();
+        ChangeCharacterStats();
 	}
+
+    public void ChangeCharaterSprite(){
+        selectedCharacter.sprite = char_collection[characterIndex];
+    }
+
+    public void ChangeCharaterSound(){
+        AudioClip clip = voices[characterIndex];
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
+    public void ChangeCharacterStats(){
+        Debug.Log(stats.charStats[characterIndex].charName);
+    }
+
+    public void SaveCharacterSelected()
+    {
+        string toJson = JsonUtility.ToJson(stats.charStats[characterIndex]);
+        PlayerPrefs.SetString("SelectedCharacter", toJson);
+    }
 }
