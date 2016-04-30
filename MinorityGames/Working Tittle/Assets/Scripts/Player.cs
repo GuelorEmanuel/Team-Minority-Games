@@ -9,14 +9,21 @@ public class Player : MonoBehaviour {
 	void Start () {
 		animator = GetComponent<Animator> ();
 		playerHealthScript = GetComponent<HealthBar>();
-
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		playerHealthScript.decreaseHealth (1f);
-		animator.SetInteger ("AnimState", 1);
+		animator.SetInteger ("AnimState", 1); // this is a test please stand by
+		setPlayerHealthAvatar ("PlayerLogo","Logo_Riceball"); // this is a test please stand by
 
 	}
+
+	public void takeDamage(float amount) {
+		playerHealthScript.decreaseHealth (amount);
+	}
+
+	public void setPlayerHealthAvatar(string typeOfPlayer, string logoName) {
+		playerHealthScript.setLogo (typeOfPlayer, logoName);
+	}
+
 }

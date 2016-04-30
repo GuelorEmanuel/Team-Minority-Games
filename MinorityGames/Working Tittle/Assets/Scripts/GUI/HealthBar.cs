@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour {
 
-	public float maxHealth        = 100f;
-	public float currentHealth    = 0f;
-	public float currentRedHealth = 0f;
+	private float maxHealth        = 100f;
+	private float currentHealth    = 0f;
+	private float currentRedHealth = 0f;
+	private GameObject playerLogoImage;
+	private Sprite spr;
+
+	bool isDead;
+	bool isDamaged;
 
 	public GameObject greenHealthBar;
 	public GameObject redHealthBar;
@@ -16,19 +22,17 @@ public class HealthBar : MonoBehaviour {
 		currentRedHealth = maxHealth;
 	
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-	
-	}
+	void Update () {}
 
 	public void decreaseHealth(float damage) {
 		if (currentHealth > 0) {
 			if (currentHealth < currentRedHealth) {
 				
 				currentRedHealth -= damage;
-				float calculateRedHealth = currentRedHealth / maxHealth;
-				setRedHealthBar (calculateRedHealth);
+				float calculatedRedHealth = currentRedHealth / maxHealth;
+				setRedHealthBar (calculatedRedHealth);
 			} else {
 				currentHealth -= damage;
 				float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
@@ -48,5 +52,14 @@ public class HealthBar : MonoBehaviour {
 		redHealthBar.transform.localScale = new Vector3 (Mathf.Clamp(health,0f,1f),
 			redHealthBar.transform.localScale.y, redHealthBar.transform.localScale.z);
 		
+	}
+
+	public void setLogo(string typeOfPlayer, string logoName) {
+		spr = Resources.Load<Sprite> (logoName);
+		playerLogoImage = GameObject.Find(typeOfPlayer);
+		//Resources.Load<Sprite>(newImageTitle);
+		playerLogoImage.GetComponent<Image>().sprite = spr;
+
+		Debug.Log(playerLogoImage.GetComponent<Image>().sprite);
 	}
 }
