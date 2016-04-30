@@ -3,18 +3,17 @@ using System.Collections;
 
 public class HealthBar : MonoBehaviour {
 
-	public float maxHealth     = 100f;
-	public float currentHealth = 0f;
+	public float maxHealth        = 100f;
+	public float currentHealth    = 0f;
+	public float currentRedHealth = 0f;
 
 	public GameObject greenHealthBar;
 	public GameObject redHealthBar;
 
 	// Use this for initialization
 	void Start () {
-		currentHealth = maxHealth;
-		if (currentHealth > 0) {
-			//InvokeRepeating ("decreaseHealth", 1f, 1f);
-		}
+		currentHealth    = maxHealth;
+		currentRedHealth = maxHealth;
 	
 	}
 	
@@ -23,13 +22,18 @@ public class HealthBar : MonoBehaviour {
 	
 	}
 
-	public void decreaseHealth() {
+	public void decreaseHealth(float damage) {
 		if (currentHealth > 0) {
-			
-			currentHealth -= 2f;
-			float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
-			setGreenHealthBar (calculatedHealth);
-			setRedHealthBar (currentHealth);
+			if (currentHealth < currentRedHealth) {
+				
+				currentRedHealth -= damage;
+				float calculateRedHealth = currentRedHealth / maxHealth;
+				setRedHealthBar (calculateRedHealth);
+			} else {
+				currentHealth -= damage;
+				float calculatedHealth = currentHealth / maxHealth; // if current health is 80 / 100 = 0.8f
+				setGreenHealthBar (calculatedHealth);
+			}
 		}
 	}
 

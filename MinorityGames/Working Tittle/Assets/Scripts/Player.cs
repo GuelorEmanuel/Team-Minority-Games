@@ -8,15 +8,14 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
-		var playerHealth = GameObject.FindWithTag("PlayerhealthBar");
-		playerHealthScript = (HealthBar)playerHealth.GetComponent ("HealthBar");
+		playerHealthScript = GetComponent<HealthBar>();
 
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		playerHealthScript.decreaseHealth ();
+		playerHealthScript.decreaseHealth (1f);
 		animator.SetInteger ("AnimState", 1);
 
 	}
