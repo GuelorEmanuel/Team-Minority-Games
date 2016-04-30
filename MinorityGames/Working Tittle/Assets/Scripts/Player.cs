@@ -5,6 +5,7 @@ public class Player : MonoBehaviour {
 	
 	private HealthBar playerHealthScript;
 	private Animator animator;
+
 	// Use this for initialization
 	void Start () {
 		animator = GetComponent<Animator> ();
@@ -24,6 +25,14 @@ public class Player : MonoBehaviour {
 
 	public void setPlayerHealthAvatar(string typeOfPlayer, string logoName) {
 		playerHealthScript.setLogo (typeOfPlayer, logoName);
+	}
+
+	public void lightPunch() {
+		animator.SetInteger ("AnimState", 1);
+	}
+
+	public void setIdleState() {
+		animator.SetInteger ("AnimState", 0);
 	}
 
 }
