@@ -58,4 +58,8 @@ public class CharacterManager : MonoBehaviour
         string toJson = JsonUtility.ToJson(stats.charStats[characterIndex]);
         PlayerPrefs.SetString("SelectedCharacter", toJson);
     }
+    public static CharacterStats LoadCharacterSelected()
+    {
+        return JsonUtility.FromJson<CharacterStats>(PlayerPrefs.GetString("SelectedCharacter"));
+    }
 }
