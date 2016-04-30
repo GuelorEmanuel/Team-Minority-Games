@@ -9,7 +9,6 @@ public class MenuController : MonoBehaviour {
     public Slider loadingBar;
     private AsyncOperation async;
  
-
     IEnumerator LoadLevelWithBar(string sceneName)
     {
         async = SceneManager.LoadSceneAsync(sceneName);
