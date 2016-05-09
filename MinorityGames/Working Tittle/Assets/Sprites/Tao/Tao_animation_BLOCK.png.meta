@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 1b453d4d0ac704af2a3d196c7a330be7
+timeCreated: 1462830863
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tao_animation_BLOCK_0
+    21300002: Tao_animation_BLOCK_1
+    21300004: Tao_animation_BLOCK_2
+    21300006: Tao_animation_BLOCK_3
+    21300008: Tao_animation_BLOCK_4
+    21300010: Tao_animation_BLOCK_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Tao_animation_BLOCK_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 94
+        width: 636
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 154.6953, y: 49.934616}
+        - {x: 149.6953, y: 63.934616}
+        - {x: 118.6953, y: 79.934616}
+        - {x: 110.6953, y: 99.934616}
+        - {x: -40.304703, y: 99.934616}
+        - {x: -98.3047, y: 67.934616}
+        - {x: -100.3047, y: 95.934616}
+        - {x: -111.3047, y: 100.934616}
+        - {x: -125.3047, y: 100.934616}
+        - {x: -155.3047, y: 59.934616}
+        - {x: -155.3047, y: 40.934616}
+        - {x: -125.3047, y: 26.934616}
+        - {x: -119.3047, y: -18.065384}
+        - {x: -115.3047, y: -94.065384}
+        - {x: -112.3047, y: -99.065384}
+        - {x: 40.695297, y: -99.065384}
+        - {x: 111.6953, y: -35.065384}
+        - {x: 156.6953, y: 14.934616}
+        - {x: 156.6953, y: 45.934616}
+    - name: Tao_animation_BLOCK_1
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 92
+        width: 599
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118.693634, y: 99.95729}
+        - {x: 85.693634, y: 100.95729}
+        - {x: -25.306366, y: 100.95729}
+        - {x: -39.306366, y: 98.95729}
+        - {x: -85.306366, y: 72.95729}
+        - {x: -93.306366, y: 100.95729}
+        - {x: -119.306366, y: 100.95729}
+        - {x: -146.30637, y: 60.95729}
+        - {x: -146.30637, y: 48.95729}
+        - {x: -126.306366, y: 33.95729}
+        - {x: -107.306366, y: 35.95729}
+        - {x: -112.306366, y: -21.04271}
+        - {x: -107.306366, y: -99.04271}
+        - {x: 51.693634, y: -99.04271}
+        - {x: 116.693634, y: -34.04271}
+        - {x: 147.69363, y: 13.957291}
+        - {x: 147.69363, y: 49.95729}
+    - name: Tao_animation_BLOCK_2
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 88
+        width: 598
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 126.95264, y: 54.002625}
+        - {x: 120.95264, y: 100.002625}
+        - {x: 69.95264, y: 100.002625}
+        - {x: -31.047363, y: 99.002625}
+        - {x: -47.047363, y: 90.002625}
+        - {x: -86.04736, y: 79.002625}
+        - {x: -97.04736, y: 100.002625}
+        - {x: -119.04736, y: 100.002625}
+        - {x: -146.04736, y: 66.002625}
+        - {x: -146.04736, y: 48.002625}
+        - {x: -139.04736, y: 36.002625}
+        - {x: -115.04736, y: 34.002625}
+        - {x: -114.04736, y: -23.997375}
+        - {x: -106.04736, y: -99.997375}
+        - {x: 51.952637, y: -99.997375}
+        - {x: 138.95264, y: -15.9973755}
+        - {x: 146.95264, y: -0.9973755}
+        - {x: 146.95264, y: 35.002625}
+    - name: Tao_animation_BLOCK_3
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 90
+        width: 573
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 140.90564, y: 63.479958}
+        - {x: 127.90564, y: 90.47996}
+        - {x: 113.90564, y: 98.47996}
+        - {x: -29.09436, y: 98.47996}
+        - {x: -71.09436, y: 79.47996}
+        - {x: -94.09436, y: 98.47996}
+        - {x: -120.09436, y: 98.47996}
+        - {x: -140.09436, y: 70.47996}
+        - {x: -140.09436, y: 46.479958}
+        - {x: -125.09436, y: 28.479958}
+        - {x: -102.09436, y: 34.479958}
+        - {x: -108.09436, y: -21.520042}
+        - {x: -101.09436, y: -96.52004}
+        - {x: 48.90564, y: -96.52004}
+        - {x: 116.90564, y: -32.520042}
+        - {x: 139.90564, y: -6.5200424}
+        - {x: 140.90564, y: -2.5200424}
+    - name: Tao_animation_BLOCK_4
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 92
+        width: 573
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141.19861, y: -3.5427094}
+        - {x: 141.19861, y: 52.45729}
+        - {x: 128.19861, y: 82.45729}
+        - {x: 115.19861, y: 89.45729}
+        - {x: -26.801392, y: 92.45729}
+        - {x: -61.80139, y: 74.45729}
+        - {x: -98.80139, y: 93.45729}
+        - {x: -110.80139, y: 93.45729}
+        - {x: -139.80139, y: 65.45729}
+        - {x: -139.80139, y: 46.45729}
+        - {x: -127.80139, y: 33.45729}
+        - {x: -109.80139, y: -16.54271}
+        - {x: -103.80139, y: -91.54271}
+        - {x: 55.19861, y: -91.54271}
+        - {x: 102.19861, y: -45.54271}
+        - {x: 115.19861, y: -33.54271}
+        - {x: 140.19861, y: -8.542709}
+    - name: Tao_animation_BLOCK_5
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 98
+        width: 573
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 141.11633, y: 40.389282}
+        - {x: 121.11633, y: 88.38928}
+        - {x: -28.883667, y: 88.38928}
+        - {x: -48.883667, y: 80.38928}
+        - {x: -75.88367, y: 88.38928}
+        - {x: -113.88367, y: 88.38928}
+        - {x: -139.88367, y: 62.389282}
+        - {x: -139.88367, y: 42.389282}
+        - {x: -127.88367, y: 27.389282}
+        - {x: -105.88367, y: 23.389282}
+        - {x: -108.88367, y: -78.61072}
+        - {x: -100.88367, y: -86.61072}
+        - {x: 47.116333, y: -86.61072}
+        - {x: 89.11633, y: -54.610718}
+        - {x: 118.11633, y: -32.610718}
+        - {x: 141.11633, y: 0.38928223}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
