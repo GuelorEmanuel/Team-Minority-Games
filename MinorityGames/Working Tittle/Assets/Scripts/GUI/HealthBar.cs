@@ -60,6 +60,6 @@ public class HealthBar : MonoBehaviour {
 		//Resources.Load<Sprite>(newImageTitle);
 		playerLogoImage.GetComponent<Image>().sprite = spr;
 
-		Debug.Log(playerLogoImage.GetComponent<Image>().sprite);
+		//Debug.Log(playerLogoImage.GetComponent<Image>().sprite);
 	}
 }
