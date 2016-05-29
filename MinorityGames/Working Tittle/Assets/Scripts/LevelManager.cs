@@ -19,11 +19,10 @@ public class LevelManager : MonoBehaviour
     {
         Sprite sp = lvl_collection[index];
         selectedArena.sprite = sp;
-        SaveArena(sp);
     }
-    public void SaveArena(Sprite sp)
+    public void SaveArena()
     {
-        PlayerPrefs.SetString("SelectedArena", sp.name);
+        PlayerPrefs.SetString("SelectedArena", selectedArena.sprite.name);
     }
     public void LoadArena()
     {
